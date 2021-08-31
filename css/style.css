@@ -1,0 +1,337 @@
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+    z-index: 10;
+}
+
+.logo{
+    width: 125px;
+}
+
+#navId{
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbarSupportedContent{
+    width: 80%;
+}
+
+#menu{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 991px){
+    #menu{
+        width: 100%;
+    }
+}
+
+#principal li:nth-child(1) a,
+#sobre li:nth-child(2) a,
+#servicos li:nth-child(3) a,
+#contato li:nth-child(4) a {
+    color: #d30c7b;
+    font-weight: bold;
+}
+
+.empty-space{
+    height: 116px;
+    background-color: purple;
+}
+
+#div-main{
+    /* border: solid; */
+}
+
+.banner{
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+@media(max-width: 575px){
+    .banner{
+        height: 30vh;
+        background-size: 100%;
+    }
+}
+
+#principal .banner{
+    background-image: url('../img/loja-de-cosmeticos-virtual-como-montar-1-removebg-preview.png');
+}
+
+#sobre .banner{
+    background-image: url('../img/mulher-segurando-um-frasco-de-perfume-sem-rotulo_53876-107696-removebg-preview.png'), linear-gradient(#ffe3dc, #fff);
+}
+
+#servicos .banner{
+    background-image: url('../img/depositphotos_118550084-stock-photo-aromatic-perfume-bottles-removebg-preview.png'), linear-gradient(#ffe3dc, #fff);
+}
+
+#contato .banner{
+    background-image: url('https://site.abcfarma.org.br/wp-content/uploads/2019/05/loja-de-cosmeticos-virtual-como-montar-1.jpg');
+}
+
+section#main-section{
+    background-color: #a2ad91;
+    padding: 50px 0;
+}
+
+#divImg{
+    display: flex;
+    align-items: stretch;
+}
+
+figure.col-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+figure.col-sm figure{
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+#principal section img{
+    max-width: 175px;
+    margin: 0 auto;
+}
+
+@media(min-width: 575px){
+    section img{
+        width: 80%;
+    }
+}
+
+footer{
+    background-color: pink;
+    padding: 20px 0;
+}
+
+footer .wrapper{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+footer .social i{
+    font-size: 2rem;
+    color: #db84ad;
+}
+
+footer .footerLogo{
+    width: 75px;    
+}
+
+/* sobre*/
+
+#sobre .card-sobre{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#sobre .card-sobre-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre .card-sobre-info p{
+    width: 40%;
+}
+#sobre .card-sobre-info figure{
+    width: 40%;
+    text-align: right;
+    /* border: 1px solid; */
+}
+
+#sobre .card-sobre-info figure img{
+    border: 1px solid;
+    width: 80%;
+}
+
+#sobre .card-sobre:nth-child(2){
+    border: 3px solid #d30c7b;
+    border-radius: 8px;
+}
+
+#sobre .card-sobre:nth-child(2) figure{
+    text-align: left;
+}
+
+#sobre .card-sobre:nth-child(2) p{
+    /* border: solid violet; */
+    order: -1;
+}
+
+@media(max-width: 575px){
+
+    #sobre .card-sobre-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre .card-sobre-info figure,
+    #sobre .card-sobre-info p{
+        width: 80%;
+        text-align: center;
+        /* border: 1px solid; */
+    }
+
+    #sobre .card-sobre-info figure img{
+        border: 1px solid;
+        width: 100%;
+    }
+}
+
+/* servicos */
+
+#servicos #main-servico{
+    background-color: #a2ad91;
+    background-image: linear-gradient(#fff 10%, #a2ad91 75%);
+    padding: 50px 0;
+}
+
+#servicos .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+#servicos .row > div{
+    width: 50%;
+    padding-left: 25px;
+}
+
+#servicos .row > figure{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#servicos .row > figure img{
+    width: 90%;
+    height: auto;
+}
+
+#servicos #parceiros{
+    padding: 50px;
+}
+
+#servicos .col-4{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    #servicos .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #servicos .row > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #servicos .row h2{
+        text-align: center;
+    }
+
+    #servicos .row > figure{
+        width: 100%;
+        justify-content: center;
+    }
+
+    #servicos .row > figure img{
+        margin-top: 50px;
+        width: 50%;
+    }
+
+    #servicos figure.col-4{
+        flex-direction: column;
+    }
+
+    #servicos figure.col-4 img{
+        width: 150px;
+    }
+}   
+
+
+
+/*scroll*/
+
+.top{  
+    position: fixed;
+    bottom: 10px; 
+    right: 10px;
+    display:none;
+}
+
+.fas.fa-chevron-up{
+    font-size: 2.5rem;
+    animation: arrow-up 1s infinite alternate;
+    color: #d30c7b;
+}
+
+@keyframes arrow-up{
+    0% {
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+/* contato */
+
+#contato .success{
+    border: inset 0;
+    outline: 0;
+    box-shadow: 0px 0px 10px var(--success);
+}
+
+#contato .fail{
+    border: inset 0;
+    outline: 0;
+    box-shadow: 0px 0px 10px var(--danger);
+}
+
+@media(min-width: 375px){
+    form{
+        max-width: 510px;
+        margin: 0 auto;
+    }
+}
